@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sacar Turno</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="banner">
+        <img src="./img/logo-clinica.webp" alt="Imagen del banner">
+        <h1>Centro de Turnos</h1>
+    </div>
+
+    <form id="turno-form">
+        <label for="dia">Día de la semana:</label>
+        <input type="text" id="dia" name="dia" placeholder="Ingrese el día (lunes, martes, miércoles, jueves, viernes)" required><br><br>
+        
+        <label for="horario">Horario:</label>
+        <input type="text" id="horario" name="horario" placeholder="Ingrese el horario (formato: 7:00, 8:00, ..., 16:00)" required><br><br>
+        
+        <button type="submit">Sacar Turno</button>
+    </form>
+
+    <div class="turnoslista" id="turnos-lista"></div>
+
+    <script defer src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
